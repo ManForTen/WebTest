@@ -3,16 +3,38 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <meta charset="UTF-8">
-    <title>ManForTen!</title>
+    <title>BeautyLife!</title>
 </head>
 <body>
 <div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var gridItems = document.querySelectorAll(".angry-grid-item");
+      
+          var observer = new IntersectionObserver(
+            function (entries, observer) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = 1;
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.5 }
+          );
+      
+          gridItems.forEach(function (item) {
+            observer.observe(item);
+          });
+        });
+      </script>
+
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">ManForTen</a>
+        <a class="navbar-brand" href="index.html">BeautyLife</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +44,7 @@
                     <a class="nav-link" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">Обо мне</a>
+                    <a class="nav-link" href="aboutus.html">О нас</a>
                 </li>
             </ul>
         </div>
@@ -32,35 +54,58 @@
                     <a class="nav-link" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">Обо мне</a>
+                    <a class="nav-link" href="aboutus.html">О нас</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <h1>Привет!</h1>
-    <h1>Меня зовут ManForTen</h1>
-    <br> <br><br><br><br><br>
-    <h3 class="text-2">Добро пожаловать на мою страницу!</p>
-
-    <!-- <h3 class="text-2">Мои ссылки:</h3>
-        <ul class="list-unstyled">
-            <li>
-                <a href="https://github.com/ManForTen" target="_blank" class="d-block mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" style="color: #ffffff;">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                      </svg>
-                </a>
-            </li>
-            <li>
-                <a href="https://youtube.com/@manforten?si=JPmqcbFOnFnYcT1B" target="_blank" class="d-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" style="color: #ed302f;">
-                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                      </svg>
-                </a>
-            </li>
-        </ul> -->
+    
+    <h3 class="text-2">Добро пожаловать на страницу о нас!</h3>
+    
 </div>
+    <div class="angry-grid">
+        <div id="item-0" class="angry-grid-item">
+            <h2 class="boldtext">Косметический магазин "BeautyLife" — ваш путь к непревзойденной красоте в Москве</h2>
+            <h2>
+                В мире, где красота становится неотъемлемой частью жизни, и где самоуважение и уверенность играют решающую роль в повседневной деятельности, магазин "BeautyLife" занимает ведущее место среди косметических магазинов в Москве. У нас вы найдете все необходимое для того, чтобы выглядеть и чувствовать себя непревзойденно.
+            </h2>
+        </div>
+
+        <div id="item-1" class="angry-grid-item">
+            <h2 class="boldtext">Широкий ассортимент продукции</h2>
+            <h2>
+                В магазине "BeautyLife" мы гордимся своим разнообразием косметических продуктов. От ведущих мировых брендов до уникальных местных производителей, наши полки заполнены самыми актуальными и инновационными продуктами для ухода за кожей, волосами и ногтями. Мы следим за последними тенденциями в мире красоты и постоянно обновляем наш ассортимент, чтобы удовлетворить самые изысканные потребности наших клиентов.
+            </h2>
+        </div>
+
+        <div id="item-2" class="angry-grid-item">
+            <h2 class="boldtext">Профессиональные консультации</h2>
+            <h2>
+                В "BeautyLife" мы ценим наших клиентов и стремимся обеспечить им лучший сервис. Наши профессиональные консультанты готовы поделиться своими знаниями и опытом, чтобы помочь вам выбрать идеальные продукты для вашего типа кожи и стиля. Мы предлагаем персонализированные консультации по уходу за кожей, макияжу и многое другое, чтобы вы могли достичь своей неповторимой красоты.
+            </h2>
+        </div>
+
+        <div id="item-3" class="angry-grid-item">
+            <h2 class="boldtext">Комфортное и уютное пространство</h2>
+            <h2>
+                Мы создали атмосферу комфорта и уюта, чтобы вы могли насладиться покупками и получить удовольствие от процесса ухода за собой. Наш магазин предлагает просторное и стильное пространство, где вы можете свободно и удобно исследовать наш ассортимент и наслаждаться покупками.
+            </h2>
+        </div>
+
+        <div id="item-5" class="angry-grid-item">
+            <h2 class="boldtext">Непрерывное стремление к качеству</h2>
+            <h2>
+                Магазин "BeautyLife" постоянно работает над улучшением наших услуг и продуктов. Мы тщательно отбираем наших поставщиков и тщательно контролируем качество каждого продукта, чтобы обеспечить нашим клиентам только лучшее. Наша цель - сделать вашу покупку в магазине "BeautyLife" не только приятным, но и незабываемым опытом.
+            </h2>
+        </div>
+
+        <div id="item-6" class="angry-grid-item">
+            <h2 class="finaltext">Присоединяйтесь к нам в магазине "BeautyLife" и дайте своей красоте сиять ярче, чем когда-либо прежде. Ваша красота наш приоритет.</h2>
+            
+        </div>
+
+    </div>
 
 <!-- футер -->
 <footer class="footer">
@@ -89,6 +134,29 @@
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <!-- футер -->
+<button id="scrollTopBtn" onclick="scrollToTop()"><svg id="svg_mobile_up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+  </svg></button>
 
+<script>
+    // Функция для прокрутки в начало страницы
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Плавная анимация
+        });
+    }
+
+    // Показываем/скрываем кнопку при прокрутке
+    window.onscroll = function() {
+        var scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    };
+</script>
 </body>
 </html>

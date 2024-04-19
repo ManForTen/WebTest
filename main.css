@@ -132,8 +132,10 @@
       min-width: 650px;
       min-height: 300px;
       margin-bottom: 60px;
+      margin-left: 90px;
+      margin-right: 90px;
   }
-  
+
    #item-0 {
    
       grid-row-start: 1;
@@ -377,7 +379,14 @@
       background-color: #000000; /* Белый фон при наведении */
       color: #ffffff; /* Черный текст при наведении */
   }
-   
+  
+  .boldtext{
+   font-weight: bold;
+   font-size: 25px;
+  }
+  .finaltext{
+   font-size: 35px;
+  }
  }
 
 
