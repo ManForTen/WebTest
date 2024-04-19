@@ -11,28 +11,6 @@
 <body>
 <div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var gridItems = document.querySelectorAll(".angry-grid-item");
-      
-          var observer = new IntersectionObserver(
-            function (entries, observer) {
-              entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                  entry.target.style.opacity = 1;
-                  observer.unobserve(entry.target);
-                }
-              });
-            },
-            { threshold: 0.5 }
-          );
-      
-          gridItems.forEach(function (item) {
-            observer.observe(item);
-          });
-        });
-      </script>
-
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">BeautyLife</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,46 +39,44 @@
     </nav>
 
     
-    <h3 class="text-2">Добро пожаловать на страницу о нас!</h3>
-    
 </div>
     <div class="angry-grid">
-        <div id="item-0" class="angry-grid-item">
+        <div id="item-0" class="angry-grid-item" style="opacity: 1;">
             <h2 class="boldtext">Косметический магазин "BeautyLife" — ваш путь к непревзойденной красоте в Москве</h2>
             <h2>
                 В мире, где красота становится неотъемлемой частью жизни, и где самоуважение и уверенность играют решающую роль в повседневной деятельности, магазин "BeautyLife" занимает ведущее место среди косметических магазинов в Москве. У нас вы найдете все необходимое для того, чтобы выглядеть и чувствовать себя непревзойденно.
             </h2>
         </div>
 
-        <div id="item-1" class="angry-grid-item">
+        <div id="item-1" class="angry-grid-item" style="opacity: 1;">
             <h2 class="boldtext">Широкий ассортимент продукции</h2>
             <h2>
                 В магазине "BeautyLife" мы гордимся своим разнообразием косметических продуктов. От ведущих мировых брендов до уникальных местных производителей, наши полки заполнены самыми актуальными и инновационными продуктами для ухода за кожей, волосами и ногтями. Мы следим за последними тенденциями в мире красоты и постоянно обновляем наш ассортимент, чтобы удовлетворить самые изысканные потребности наших клиентов.
             </h2>
         </div>
 
-        <div id="item-2" class="angry-grid-item">
+        <div id="item-2" class="angry-grid-item" style="opacity: 1;">
             <h2 class="boldtext">Профессиональные консультации</h2>
             <h2>
                 В "BeautyLife" мы ценим наших клиентов и стремимся обеспечить им лучший сервис. Наши профессиональные консультанты готовы поделиться своими знаниями и опытом, чтобы помочь вам выбрать идеальные продукты для вашего типа кожи и стиля. Мы предлагаем персонализированные консультации по уходу за кожей, макияжу и многое другое, чтобы вы могли достичь своей неповторимой красоты.
             </h2>
         </div>
 
-        <div id="item-3" class="angry-grid-item">
+        <div id="item-3" class="angry-grid-item" style="opacity: 1;">
             <h2 class="boldtext">Комфортное и уютное пространство</h2>
             <h2>
                 Мы создали атмосферу комфорта и уюта, чтобы вы могли насладиться покупками и получить удовольствие от процесса ухода за собой. Наш магазин предлагает просторное и стильное пространство, где вы можете свободно и удобно исследовать наш ассортимент и наслаждаться покупками.
             </h2>
         </div>
 
-        <div id="item-5" class="angry-grid-item">
+        <div id="item-5" class="angry-grid-item" style="opacity: 1;">
             <h2 class="boldtext">Непрерывное стремление к качеству</h2>
             <h2>
                 Магазин "BeautyLife" постоянно работает над улучшением наших услуг и продуктов. Мы тщательно отбираем наших поставщиков и тщательно контролируем качество каждого продукта, чтобы обеспечить нашим клиентам только лучшее. Наша цель - сделать вашу покупку в магазине "BeautyLife" не только приятным, но и незабываемым опытом.
             </h2>
         </div>
 
-        <div id="item-6" class="angry-grid-item">
+        <div id="item-6" class="angry-grid-item" style="opacity: 1;">
             <h2 class="finaltext">Присоединяйтесь к нам в магазине "BeautyLife" и дайте своей красоте сиять ярче, чем когда-либо прежде. Ваша красота наш приоритет.</h2>
             
         </div>
