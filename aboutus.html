@@ -11,6 +11,31 @@
 <body>
 <div>
 
+<<<<<<< HEAD
+=======
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var gridItems = document.querySelectorAll(".angry-grid-item");
+      
+          var observer = new IntersectionObserver(
+            function (entries, observer) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = 1;
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1 }
+          );
+      
+          gridItems.forEach(function (item) {
+            observer.observe(item);
+          });
+        });
+      </script>
+
+>>>>>>> d4eb7e6b491dac074774f1d1f62ba39964e82881
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html">BeautyLife</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
