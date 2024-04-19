@@ -455,8 +455,8 @@
    width:200px;
    height: 200px;
    position: absolute;
-   right: -8%;
-   margin-top: 48%;
+   right: -2%;
+   margin-top: 45%;
 
 }
 
@@ -543,7 +543,7 @@
       align-items: stretch;
       gap: 0px;
       height: 100%;
-      margin-left: 8%;
+      margin-left: 12%;
   }
   
   .angry-grid-item {
