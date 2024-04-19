@@ -53,6 +53,14 @@
       margin-left: 12%;
   }
 
+  .buybutton{
+   width:75px;
+   height:75px;
+   position: absolute;
+   bottom: 43%; 
+   right: 12%;
+}
+
   .slider {
    overflow: hidden;
    width: 100%;
@@ -443,6 +451,40 @@
 .nav-link:hover {
    color: #000000; /* Цвет при наведении на ссылку */
 }
+
+.buybutton{
+   width:150px;
+   height:150px;
+   position: absolute;
+   right: -2%;
+   margin-top: 40%;
+
+}
+
+.slider {
+   overflow: hidden;
+   width: 120%;
+   height: 500px; 
+ }
+ 
+ .slide {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+ }
+ 
+ .slide img {
+   width: 120%;
+   max-height: 500px;
+   object-fit: cover;
+ }
+ 
+ .slide.active {
+   opacity: 1;
+ }
+ 
   
   .start-text{
       text-align: left;
@@ -771,6 +813,14 @@
   .text-2{
    font-size: 45px;
 
+  }
+
+  .boldtext{
+   font-weight: bold;
+   font-size: 25px;
+  }
+  .finaltext{
+   font-size: 35px;
   }
 }
 
