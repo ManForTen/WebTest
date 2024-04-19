@@ -1,0 +1,744 @@
+@media (min-width: 1000px){
+   body {
+      background-color: black;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: rgba(128, 128, 128, 0.8); /* Полупрозрачный черный цвет фона */
+      backdrop-filter: blur(100px); /* Размытие для эффекта стекломорфизма */
+      box-shadow: 0px 4px 6px rgba(108, 92, 92, 0.1);
+  }
+  
+  .navbar-brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .navbar-nav {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .nav-item {
+      margin-right: 20px;
+  }
+  
+  .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+      color: #000000; /* Цвет при наведении на ссылку */
+  }
+  
+  h1, h2, h3, h4 {
+      color: white;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      margin-top: 30px;
+  }
+  
+  
+  h2 {
+      font-size: 20px;
+      max-width: 500px;
+      text-align: justify;
+      margin-left: 12%;
+  }
+  
+  .start-text{
+      text-align: left;
+      margin-left: 75px;
+      font-size: 40px;
+  }
+
+  #div_kolvo_pl{
+   font-size: 100px;
+  }
+  
+  #next-start-text{
+      text-align: justify;
+      margin-left: 75px;
+      font-size: 20px;
+      max-height: 250px;
+  }
+  
+  .main-text-head{
+      margin-top: 50px;
+      font-size: 45px;
+  }
+  
+  .navbar-brand{
+      margin-left: 20px;
+  }
+  
+  .header-container {
+      text-align: center;
+    }
+  
+  .header-image {
+      max-width: 500px; 
+      height: auto;
+      margin-bottom: 10px; 
+  }
+  
+  .angry-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0px;
+      height: 100%;
+  }
+  
+  .angry-grid-item {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+      min-width: 650px;
+      min-height: 300px;
+  }
+  
+  
+   #item-0 {
+   
+      grid-row-start: 1;
+      grid-column-start: 1;
+   
+      grid-row-end: 2;
+      grid-column-end: 2;
+      
+   }
+   #item-1 {
+    
+      grid-row-start: 1;
+      grid-column-start: 1;
+   
+      grid-row-end: 2;
+      grid-column-end: 3;
+      
+   }
+   #item-2 {
+   
+      grid-row-start: 2;
+      grid-column-start: 1;
+   
+      grid-row-end: 3;
+      grid-column-end: 2;
+      
+   }
+   #item-3 {
+   
+      grid-row-start: 2;
+      grid-column-start: 2;
+   
+      grid-row-end: 3;
+      grid-column-end: 3;
+      
+   }
+   #item-4 {
+   
+      grid-row-start: 3;
+      grid-column-start: 1;
+   
+      grid-row-end: 4;
+      grid-column-end: 2;
+      
+   }
+   #item-5 {
+   
+      grid-row-start: 3;
+      grid-column-start: 2;
+   
+      grid-row-end: 4;
+      grid-column-end: 3;
+      
+   }
+   #item-6 {
+   
+      grid-row-start: 4;
+      grid-column-start: 1;
+   
+      grid-row-end: 5;
+      grid-column-end: 2;
+      
+   }
+   #item-7 {
+   
+      grid-row-start: 4;
+      grid-column-start: 2;
+   
+      grid-row-end: 5;
+      grid-column-end: 3;
+      
+   }
+   #item-8 {
+   
+      grid-row-start: 5;
+      grid-column-start: 1;
+   
+      grid-row-end: 6;
+      grid-column-end: 2;
+      
+   }
+   #item-9 {
+   
+      grid-row-start: 5;
+      grid-column-start: 2;
+   
+      grid-row-end: 6;
+      grid-column-end: 3;
+      
+   }
+   #item-10 {
+   
+      grid-row-start: 6;
+      grid-column-start: 1;
+   
+      grid-row-end: 7;
+      grid-column-end: 2;
+      
+   }
+   #item-11 {
+   
+      grid-row-start: 6;
+      grid-column-start: 2;
+   
+      grid-row-end: 7;
+      grid-column-end: 3;
+      
+   }
+   #item-12 {
+  
+      grid-row-start: 7;
+      grid-column-start: 1;
+   
+      grid-row-end: 8;
+      grid-column-end: 2;
+      
+   }
+   #item-13 {
+   
+      grid-row-start: 7;
+      grid-column-start: 2;
+   
+      grid-row-end: 8;
+      grid-column-end: 3;
+      
+   }
+   #item-14 {
+   
+      grid-row-start: 8;
+      grid-column-start: 1;
+   
+      grid-row-end: 9;
+      grid-column-end: 2;
+      
+   }
+   #item-15 {
+   
+      grid-row-start: 8;
+      grid-column-start: 2;
+   
+      grid-row-end: 9;
+      grid-column-end: 3;
+      
+   }
+   #item-16 {
+   
+      grid-row-start: 9;
+      grid-column-start: 1;
+   
+      grid-row-end: 10;
+      grid-column-end: 2;
+      
+   }
+   #item-17 {
+   
+      grid-row-start: 9;
+      grid-column-start: 2;
+   
+      grid-row-end: 10;
+      grid-column-end: 3;
+      
+   }
+   #item-18 {
+   
+      grid-row-start: 10;
+      grid-column-start: 1;
+   
+      grid-row-end: 11;
+      grid-column-end: 2;
+      
+   }
+   #item-19 {
+   
+      grid-row-start: 10;
+      grid-column-start: 2;
+   
+      grid-row-end: 11;
+      grid-column-end: 3;
+      
+   }
+   #item-20 {
+   
+      grid-row-start: 11;
+      grid-column-start: 1;
+   
+      grid-row-end: 12;
+      grid-column-end: 2;
+      
+   }
+   #item-21 {
+   
+      grid-row-start: 11;
+      grid-column-start: 2;
+   
+      grid-row-end: 12;
+      grid-column-end: 3;
+      
+   }
+   #item-22 {
+   
+      grid-row-start: 12;
+      grid-column-start: 1;
+   
+      grid-row-end: 13;
+      grid-column-end: 2;
+      
+   }
+   #item-23 {
+  
+      grid-row-start: 12;
+      grid-column-start: 2;
+   
+      grid-row-end: 13;
+      grid-column-end: 3;
+      
+   }
+  
+   /* Стили для кнопки */
+  #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff; /* Цвет текста кнопки */
+      border: 2px solid #fff; /* Белая обводка */
+      border-radius: 5px;
+      background-color: transparent; /* Прозрачный фон */
+      padding: 10px 15px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  #scrollTopBtn.show {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  #scrollTopBtn:hover {
+      background-color: #fff; /* Белый фон при наведении */
+      color: #000; /* Черный текст при наведении */
+  }
+   
+ }
+
+
+ @media (max-width: 1000px){
+   body {
+      background-color: black;
+      text-align: center;
+    }
+  
+  h1, h2, h3, h4 {
+      color: white;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      margin-top: 30px;
+  }
+  
+  h1{
+   font-size: 80px;
+  }
+  
+  h2 {
+      font-size: 30px;
+      max-width: 700px;
+      text-align: justify;
+      margin-left: 12%;
+  }
+
+  .navbar {
+   background-color: rgba(128, 128, 128, 0.8); /* Полупрозрачный черный цвет фона */
+}
+
+.navbar-brand {
+   color: #fff;
+   font-weight: bold;
+}
+
+.navbar-nav {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-item {
+   margin-right: 20px;
+}
+
+.nav-link {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+   transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+   color: #000000; /* Цвет при наведении на ссылку */
+}
+  
+  .start-text{
+      text-align: left;
+      margin-left: 75px;
+      font-size: 35px;
+  }
+  
+  #next-start-text{
+      text-align: justify;
+      margin-left: 75px;
+      font-size: 35px;
+  }
+
+  #next-start-text_2{
+   text-align: center;
+   margin-left: 75px;
+   font-size: 35px;
+}
+  
+  .main-text-head{
+      margin-top: 120px;
+      font-size: 75px;
+  }
+  
+  .navbar-brand{
+      margin-left: 20px;
+      font-size: 70px;
+  }
+
+  .navbar{
+   font-size: 70px;
+  }
+  
+  .navbar-toggler-icon{
+   width: 55px;
+   height: 55px;
+  }
+
+  .header-container {
+      text-align: center;
+    }
+  
+  .header-image {
+      max-width: 700px; 
+      height: auto;
+      margin-bottom: 10px; 
+  }
+  
+  #div_kolvo_pl{
+   font-size: 250px;
+  }
+
+  .angry-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0px;
+      height: 100%;
+  }
+  
+  .angry-grid-item {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+      min-width: 900px;
+      min-height: 300px;
+  }
+  
+  
+   #item-0 {
+   
+      grid-row-start: 1;
+      grid-column-start: 1;
+   
+      grid-row-end: 2;
+      grid-column-end: 2;
+      
+   }
+   #item-1 {
+    
+      grid-row-start: 1;
+      grid-column-start: 1;
+   
+      grid-row-end: 2;
+      grid-column-end: 3;
+      
+   }
+   #item-2 {
+   
+      grid-row-start: 2;
+      grid-column-start: 1;
+   
+      grid-row-end: 3;
+      grid-column-end: 2;
+      
+   }
+   #item-3 {
+   
+      grid-row-start: 2;
+      grid-column-start: 2;
+   
+      grid-row-end: 3;
+      grid-column-end: 3;
+      
+   }
+   #item-4 {
+   
+      grid-row-start: 3;
+      grid-column-start: 1;
+   
+      grid-row-end: 4;
+      grid-column-end: 2;
+      
+   }
+   #item-5 {
+   
+      grid-row-start: 3;
+      grid-column-start: 2;
+   
+      grid-row-end: 4;
+      grid-column-end: 3;
+      
+   }
+   #item-6 {
+   
+      grid-row-start: 4;
+      grid-column-start: 1;
+   
+      grid-row-end: 5;
+      grid-column-end: 2;
+      
+   }
+   #item-7 {
+   
+      grid-row-start: 4;
+      grid-column-start: 2;
+   
+      grid-row-end: 5;
+      grid-column-end: 3;
+      
+   }
+   #item-8 {
+   
+      grid-row-start: 5;
+      grid-column-start: 1;
+   
+      grid-row-end: 6;
+      grid-column-end: 2;
+      
+   }
+   #item-9 {
+   
+      grid-row-start: 5;
+      grid-column-start: 2;
+   
+      grid-row-end: 6;
+      grid-column-end: 3;
+      
+   }
+   #item-10 {
+   
+      grid-row-start: 6;
+      grid-column-start: 1;
+   
+      grid-row-end: 7;
+      grid-column-end: 2;
+      
+   }
+   #item-11 {
+   
+      grid-row-start: 6;
+      grid-column-start: 2;
+   
+      grid-row-end: 7;
+      grid-column-end: 3;
+      
+   }
+   #item-12 {
+  
+      grid-row-start: 7;
+      grid-column-start: 1;
+   
+      grid-row-end: 8;
+      grid-column-end: 2;
+      
+   }
+   #item-13 {
+   
+      grid-row-start: 7;
+      grid-column-start: 2;
+   
+      grid-row-end: 8;
+      grid-column-end: 3;
+      
+   }
+   #item-14 {
+   
+      grid-row-start: 8;
+      grid-column-start: 1;
+   
+      grid-row-end: 9;
+      grid-column-end: 2;
+      
+   }
+   #item-15 {
+   
+      grid-row-start: 8;
+      grid-column-start: 2;
+   
+      grid-row-end: 9;
+      grid-column-end: 3;
+      
+   }
+   #item-16 {
+   
+      grid-row-start: 9;
+      grid-column-start: 1;
+   
+      grid-row-end: 10;
+      grid-column-end: 2;
+      
+   }
+   #item-17 {
+   
+      grid-row-start: 9;
+      grid-column-start: 2;
+   
+      grid-row-end: 10;
+      grid-column-end: 3;
+      
+   }
+   #item-18 {
+   
+      grid-row-start: 10;
+      grid-column-start: 1;
+   
+      grid-row-end: 11;
+      grid-column-end: 2;
+      
+   }
+   #item-19 {
+   
+      grid-row-start: 10;
+      grid-column-start: 2;
+   
+      grid-row-end: 11;
+      grid-column-end: 3;
+      
+   }
+   #item-20 {
+   
+      grid-row-start: 11;
+      grid-column-start: 1;
+   
+      grid-row-end: 12;
+      grid-column-end: 2;
+      
+   }
+   #item-21 {
+   
+      grid-row-start: 11;
+      grid-column-start: 2;
+   
+      grid-row-end: 12;
+      grid-column-end: 3;
+      
+   }
+   #item-22 {
+   
+      grid-row-start: 12;
+      grid-column-start: 1;
+   
+      grid-row-end: 13;
+      grid-column-end: 2;
+      
+   }
+   #item-23 {
+  
+      grid-row-start: 12;
+      grid-column-start: 2;
+   
+      grid-row-end: 13;
+      grid-column-end: 3;
+      
+   }
+  
+   /* Стили для кнопки */
+
+   #svg_mobile_up{
+      width: 50px;
+      height: 50px;
+   }
+  #scrollTopBtn {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      bottom: 20px;
+      right: 35px;
+      background-color: #007bff;
+      color: #fff; /* Цвет текста кнопки */
+      border: 2px solid #fff; /* Белая обводка */
+      border-radius: 5px;
+      background-color: transparent; /* Прозрачный фон */
+      padding: 10px 15px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  #scrollTopBtn.show {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  #scrollTopBtn:hover {
+      background-color: #fff; /* Белый фон при наведении */
+      color: #000; /* Черный текст при наведении */
+  }
+
+  .bi{
+   width: 250px;
+   height: 250px;
+  }
+
+  .text-2{
+   font-size: 45px;
+
+  }
+}
+
+ 
+
+
+
+
