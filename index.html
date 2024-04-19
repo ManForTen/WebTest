@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <meta charset="UTF-8">
-    <title>ManForTen!</title>
+    <title>BeautyLife!</title>
     
 </head>
 <body>
@@ -33,9 +33,32 @@
           });
         });
       </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+        
+            function showSlide(index) {
+            slides.forEach(function(slide) {
+                slide.classList.remove("active");
+            });
+            slides[index].classList.add("active");
+            }
+        
+            function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+            }
+            setInterval(nextSlide, 4500);
+        });
+    </script>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  
     
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="index.html">ManForTen</a>
+        <a class="navbar-brand" href="index.html">BeautyLife</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +68,7 @@
                     <a class="nav-link" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">Обо мне</a>
+                    <a class="nav-link" href="aboutus.html">О нас</a>
                 </li>
             </ul>
         </div>
@@ -55,232 +78,95 @@
                     <a class="nav-link" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">Обо мне</a>
+                    <a class="nav-link" href="aboutus.html">О нас</a>
                 </li>
             </ul>
         </div>
     </nav>
-    
-    
 
-    <br>
-    <h1 class="main-text-head">Игры в которых у меня есть платина</h1>
-    <br>
 
-    <h4 class="start-text">Вступление</h4>
 
+    <div class="slider">
+        <div class="slide active" id="slide1">
+          <img src="pictures/header/1.png" alt="Slide 1">
+        </div>
+        <div class="slide" id="slide2">
+          <img src="pictures/header/2.png" alt="Slide 2">
+        </div>
+        <div class="slide" id="slide3">
+          <img src="pictures/header/3.png" alt="Slide 3">
+        </div>
+    </div>
     
     
     <div class="angry-grid">
         <div id="item-20" class="angry-grid-item">
-            <h2 id="next-start-text">Перед тем, как рассказать об этих играх, давайте разъясним понятие "платина" для тех, кто не знаком 
-                с этим термином. В мире видеоигр "платина" обычно используется для обозначения достижения 100% завершения игры. Получение платины 
-                подразумевает успешное завершение всех задач, выполнение достижений и обнаружение всех секретов в игре. Это высшее достижение, 
-                которое показывает полное освоение игрового мира.</h2>
+            <h2 id="next-start-text"></h2>
         </div>
+
         <div id="item-21" class="angry-grid-item">
-            <h2 id="next-start-text_2">Количество моих платин:</h2>
+            <h2 id="next-start-text_2">Количество наших покупателей:</h2>
+            <div id="div_kolvo">20 000</div>
         </div>
 
-        <div id="item-0" class="angry-grid-item">
-            <h1>Одни из нас: Часть I</h1>
-            <img src="images/tlou1.jpg" class="header-image">
-            <h2>Одни из нас: Часть I — это постапокалиптическая видеоигра, в которой игроки следуют за персонажами Джоэлом и Элли в мире,
-                пораженном инфекцией, превращающей людей в враждебных мутантов. Джоэл и Элли отправляются в путешествие через опустошенные 
-                ландшафты, сталкиваясь с опасностями и другими выжившими, чтобы доставить Элли к группе сопротивления. В ходе путешествия
-                развиваются связи между персонажами, а игрок сталкиваются с моральными дилеммами и трудными решениями в мире, 
-                где выживание часто требует жертв.
+        <div id="item-0" class="angry-grid-item" onmouseover="startSlideshow(0)">
+            <img src="pictures/first/1.png" class="header-image" onmouseover="this.src='pictures/first/2.png'" onmouseout="this.src='pictures/first/1.png'">
+            <lord-icon
+                src="https://cdn.lordicon.com/eiekfffz.json"
+                trigger="click"
+                stroke="light"
+                style="width:75px;height:75px;position: absolute;bottom: 30%; right: 12%;">
+            </lord-icon>
+            <h2>МАСКА ГЕЛЕВАЯ ВОССТАНАВЛИВАЮЩАЯ ДЛЯ КОНТУРА ГЛАЗ</h2>
+            <h2>NESCENS renewing gel mask eye contour area</h2>
+        </div>
+
+        <div id="item-1" class="angry-grid-item" onmouseover="startSlideshow(0)">
+            <img src="pictures/second/1.png" class="header-image" onmouseover="this.src='pictures/second/2.png'" onmouseout="this.src='pictures/second/1.png'">
+            <lord-icon
+                src="https://cdn.lordicon.com/eiekfffz.json"
+                trigger="click"
+                stroke="light"
+                style="width:75px;height:75px;position: absolute;bottom: 30%; right: 12%;">
+            </lord-icon>
+            <h2>УВЛАЖНЯЮЩИЙ ТОНИК ДЛЯ ЛИЦА
             </h2>
-        </div>
-
-        <div id="item-1" class="angry-grid-item">
-            <h1>Одни из нас: Часть II</h1>
-            <img src="images/tlou2.jpg" class="header-image">
-            <h2>Одни из нас: Часть II — это продолжение игры Одни из нас. История следует за Элли, выросшей после событий первой части, 
-                и её стремлением к мести за потери, пережитые ею и её близкими. Игроки вновь отправляются в постапокалиптический мир, на этот раз,
-                исследуя новые локации и взаимодействуя с новыми персонажами. The Last of Us Part II предоставляет игрокам сложные моральные выборы, 
-                внушительное повествование и глубокие характеры, вписываясь в атмосферу выживания и человеческих отношений в опустошенном мире.
-            </h2>
-        </div>
-
-        <div id="item-2" class="angry-grid-item">
-            <h1>Marvel's Spider-Man</h1>
-            <img src="images/spiderman1.jpg" class="header-image">
-            <h2>Marvel's Spider-Man — это видеоигра, в которой игрок управляет Питером Паркером, известным как Человек-Паук, в открытом мире Нью-Йорка. 
-                Игра сочетает в себе элементы приключенческого экшена и стелс-геймплея. Питер Паркер сражается с преступностью и злодеями, используя свои 
-                уникальные паучьи способности и акробатические навыки. Сюжет следует за его повседневной жизнью и борьбой с преступностью, а также включает
-                в себя встречи с знаменитыми персонажами из вселенной Marvel. Игра отличается кинематографичным повествованием, динамичным геймплеем и великолепной 
-                реализацией паучьих передвижений по городу.
+            <h2>GREEN MAMA с гиалуроновой кислотой
             </h2>
         </div>
 
-        <div id="item-3" class="angry-grid-item">
-            <h1>Marvel Человек-Паук: Майлз Моралес</h1>
-            <img src="images/spiderman12.jpeg" class="header-image">
+        <div id="item-2" class="angry-grid-item" onmouseover="startSlideshow(0)">
+            <img src="pictures/third/1.png" class="header-image" onmouseover="this.src='pictures/third/2.png'" onmouseout="this.src='pictures/third/1.png'">
+            <lord-icon
+                src="https://cdn.lordicon.com/eiekfffz.json"
+                trigger="click"
+                stroke="light"
+                style="width:75px;height:75px;position: absolute;bottom: 30%; right: 12%;">
+            </lord-icon>
             <h2>
-                Marvel Человек-Паук: Майлз Моралес - это видеоигра, являющаяся продолжением предыдущей игры Marvel's Spider-Man. Игрок управляет Майлзом Моралесом, 
-                подростком с уникальными паучьими способностями, в том числе электрическими ударами. Сюжет развивается в Нью-Йорке, когда Майлз пытается вступить в свою 
-                роль Человека-Паука, одновременно защищая город от нового злодея и обучаясь под руководством оригинального Человека-Паука, Питера Паркера. Игра предлагает 
-                улучшенные графику и геймплей, а также продолжает рассказ о приключениях в этом уникальном уголке вселенной Marvel.
+                ТУШЬ ДЛЯ РЕСНИЦ
             </h2>
-        </div>
-        <div id="item-4" class="angry-grid-item">
-            <h1>Marvel Человек-Паук 2</h1>
-            <img src="images/spider-man2.jpg" class="header-image">
             <h2>
-                Marvel Человек-Паук 2 — однопользовательская игра в жанре приключенческого боевика с видом от третьего лица. Игрок управляет двумя протагонистами — 
-                Питером Паркером и Майлзом Моралесом. Оба персонажа передвигаются по открытому миру в городе Нью-Йорк и противостоят различным преступникам.
-                В игре есть возможность приобретать дополнительные способности и костюмы Человека-паука.
-                По сюжету двум протагонистам предстоит сразиться с суперзлодеями Крейвеном-охотником, Песочным человеком и Ящером, а также столкнуться с Веномом.
-            </h2>
-        </div>
-        <div id="item-5" class="angry-grid-item">
-            <h1>Assassin's Creed Mirage</h1>
-            <img src="images/asmirage.jpg" class="header-image">
-            <h2>
-                Assassin's Creed Mirage — однопользовательская игра в жанре приключенческого боевика с видом от третьего лица.  Действия игры развернутся в Багдаде IX века,
-                за 20 лет до событий «Assassin's Creed: Вальгалла». Главным героем выступит Басим ибн Исхак, хитрый уличный вор, жаждущий справедливости и ответов на 
-                преследующие его кошмарные видения.
-            </h2>
-        </div>
-        <div id="item-6" class="angry-grid-item">
-            <h1>Assassin's Creed Синдикат</h1>
-            <img src="images/assyndicate.jpeg" class="header-image">
-            <h2>
-                Assassin's Creed Синдикат - это видеоигра в жанре экшен-приключения, выпущенная в 2015 году. События игры происходят в Лондоне в конце XIX века. 
-                Игрок управляет близнецами Эвелин и Джейкобом Фрай, борющимися против тамплиеров и их влияния в городе. Геймплей включает в себя боевые действия, скрытность,
-                исследование открытого мира и управление подпольной организацией, направленной на освобождение Лондона от контроля тамплиеров.
-            </h2>
-        </div>
-        <div id="item-7" class="angry-grid-item">
-            <h1>Horizon Zero Down</h1>
-            <img src="images/hor1.jpeg" class="header-image">
-            <h2>
-                Horizon Zero Dawn - это экшен-ролевая игра, выпущенная в 2017 году. События развиваются в постапокалиптическом мире, где игрок управляет охотницей 
-                по имени Элой, борющейся с механизированными тварями. Геймплей включает в себя охоту, использование луков и технологических устройств, а также исследование
-                уникальной открытой вселенной.
-            </h2>
-        </div>
-        <div id="item-8" class="angry-grid-item">
-            <h1>Horizon Запретный Запад</h1>
-            <img src="images/hor2.jpg" class="header-image">
-            <h2>
-                Horizon Запретный Запад - это ролевая игра в жанре экшн от третьего лица. Игрок управляет Элой, охотницой в мире, населенном опасными машинами, 
-                похожими на животных. В открытом мире она исследует таинственную границу, известную как Запретный Запад, постапокалиптическую версию Западной 
-                части Соединенных Штатов.
-            </h2>
-        </div>
-        <div id="item-9" class="angry-grid-item">
-            <h1>God of War</h1>
-            <img src="images/gow1.jpg" class="header-image">
-            <h2>
-                God of War - это перезапуск серии игр God of War. Игра следует за Кратосом, бывшим богом войны, и его сыном Атреем, в их эпическом 
-                путешествии по мифологическому миру Скандинавии. В отличие от предыдущих частей, игра внесла изменения в геймплей, предоставив более глубокий 
-                сюжет. Игра была высоко оценена за свою историю, визуальные эффекты и геймплей.
-            </h2>
-        </div>
-        <div id="item-10" class="angry-grid-item">
-            <h1>God of War Рагнарёк</h1>
-            <img src="images/gow2.jpg" class="header-image">
-            <h2>
-                God of War Рагнарёк — прямое сюжетное продолжение экшена God of War 2018 года. Греческий бог войны Кратос со своим сыном Атреем продолжит 
-                сражаться против северных богов и попытается спасти мир от очередного конца света.
-            </h2>
-        </div>
-        <div id="item-11" class="angry-grid-item">
-            <h1>Grand Theft Auto V</h1>
-            <img src="images/gta5.jpg" class="header-image">
-            <h2>
-                Grand Theft Auto V- это открытый мир в жанре экшен с элементами гонок и стрельбы. Игра разработана студией Rockstar North и выпущена в 2013 году. 
-                Сюжет следит за тремя преступниками — Майклом, Тревором и Франклином — в их попытках совершить ограбление в вымышленном городе Лос-Сантос,
-                основанном на Лос-Анджелесе. Игроки могут свободно исследовать огромный мир, участвовать в различных миссиях и заниматься различными видами деятельности. 
-            </h2>
-        </div>
-        <div id="item-12" class="angry-grid-item">
-            <h1>Жизнь - странная штука 2</h1>
-            <img src="images/lis2.jpg" class="header-image">
-            <h2>
-                Сюжет игры рассказывает о братьях Диасах, 16-летнем Шоне и 9-летнем Даниэле, которые вынуждены оставить дом в Сиэтле после произошедшей там трагедии. 
-                Они опасаются преследования полиции и бегут в Мексику, по пути разбираясь с внезапно проявившимися сверхспособностями.
-                Вдали от дома, преодолевая тяготы и невзгоды, Шон ощущает весь груз ответственности за судьбу брата — ведь от его решений зависит их будущее.
-            </h2>
-        </div>
-        <div id="item-13" class="angry-grid-item">
-            <h1>Ghost of Tsushima</h1>
-            <img src="images/got1.jpg" class="header-image">
-            <h2>
-                Ghost of Tsushima - это экшен-приключение, выпущенное в 2020 году для PlayStation. Игроки управляют самураем по имени Джин Сакай на острове Цусима 
-                в период японских монгольских вторжений. Главная тема - борьба за защиту своего рода и культуры. Игра отличается красивой графикой, свободой исследования 
-                и динамичными боями.
-            </h2>
-        </div>
-        <div id="item-14" class="angry-grid-item">
-            <h1>Detroit: Стать человеком</h1>
-            <img src="images/detroit.jpg" class="header-image">
-            <h2>
-                Detroit: Стать человеком - это интерактивный кинематографический опыт, выпущенный в 2018 году Quantic Dream. Игроки следят за историями трех 
-                андроидов - Карлоса, Маркуса и Кары - в городе Детройт в близком будущем, где искусственные создания начинают проявлять эмоции и стремления к свободе.
-                Решения игрока влияют на развитие сюжета и его множество возможных концовок. Игра известна своим визуальным стилем, моральными дилеммами и глубоким повествованием.
-            </h2>
-        </div>
-        <div id="item-15" class="angry-grid-item">
-            <h1>A Way Out</h1>
-            <img src="images/a way out.jpg" class="header-image">
-            <h2>
-                A Way Out - это кооперативная видеоигра, выпущенная в 2018 году Hazelight Studios. Игроки берут на себя роли двух заключенных, Лео и Винсента, которые совершают 
-                побег из тюрьмы и затем преследуют личные цели вне её стен. Главная особенность игры - кооперативный геймплей, требующий взаимодействия обоих игроков для решения 
-                головоломок и преодоления испытаний. A Way Out подчеркивает важность совместных усилий и взаимодействия в ходе игры.
-            </h2>
-        </div>
-        <div id="item-16" class="angry-grid-item">
-            <h1>It Takes Two</h1>
-            <img src="images/it1.jpg" class="header-image">
-            <h2>  
-                It Takes Two - это кооперативная игра, выпущенная в 2021 году Hazelight Studios. Игроки управляют двумя куклами, созданными волшебным заклинанием, и вступают 
-                в увлекательное приключение в фантастическом мире. Главная особенность игры - полное взаимодействие и совместные усилия двух игроков, которые должны работать в 
-                паре для решения головоломок и преодоления испытаний. It Takes Two предоставляет уникальный опыт, требующий активного взаимодействия обоих игроков для 
-                продвижения вперед и развития истории.
-            </h2>
-        </div>
-        <div id="item-17" class="angry-grid-item">
-            <h1>ASTRO's PLAYROOM</h1>
-            <img src="images/astro.jpg" class="header-image">
-            <h2>  
-                Astro's Playroom - это видеоигра, разработанная Japan Studio и включенная в состав PlayStation 5 в качестве предустановленной игры. Она представляет собой платформер 
-                с элементами приключенческого геймплея. Главный персонаж, Astro, исследует различные уровни, представляющие различные компоненты консоли PlayStation, такие как CPU и GPU. 
-                Игра служит также в качестве демонстрации технических возможностей PlayStation 5, включая использование нового контроллера DualSense с его уникальными функциями тактильной 
-                обратной связи и адаптивных триггеров. Astro's Playroom призвана показать возможности новой игровой консоли и предоставить развлечение для игроков.
-            </h2>
-
-        </div>
-        <div id="item-18" class="angry-grid-item">
-            <h1>Goat Simulator</h1>
-            <img src="images/goat1.jpg" class="header-image">
-            <h2>  
-                Goat Simulator - это необычная и юмористическая видеоигра, выпущенная в 2014 году. Игроки управляют козой и исследуют открытый мир, выполняя различные абсурдные
-                действия и вызывая хаос. Игра известна своей беспорядочной физикой и нестандартным подходом к симуляции, ставящим под сомнение серьезные аспекты других симуляторов. 
-                Goat Simulator призвана развлекать и порождать смех у игроков своим необычным и абсурдным геймплеем.
-            </h2>
-        </div>
-        <div id="item-19" class="angry-grid-item">
-            <h1>My Name is Mayo</h1>
-            <img src="images/MNIM1.jpeg" class="header-image">
-            <h2>  
-                My Name is Mayo - это необычная и минимальная по игровой механике игра, выпущенная в 2016 году. В основном, это "кликер" (clicker) с простым геймплеем, где игроки 
-                должны многократно кликать по банке с майонезом. Цель - заработать очки и разблокировать различные костюмы для банки майонеза. Игра приобрела известность благодаря 
-                своей простоте, сюрреалистичному юмору и непривычной концовке. My Name is Mayo стала объектом внимания сообщества благодаря своей необычности и стала популярной 
-                среди тех, кто ищет удивительные и нестандартные игровые опыты.
+                L'OREAL PARIS panorama
             </h2>
         </div>
 
-        <div id="item-22" class="angry-grid-item">
-            <h2>  
-                Особо внимательные могли заметить, что здесь изображено меньше игр, чем указано в начале в количестве платин. Всё дело в том, что при переходе с PS4 на PS5 можно заново 
-                получить платину, просто зайдя в игру. Пример таких игр в моем случае: "Одни из нас: Часть II", "Grand Theft Auto V". Также, чтобы не повторять список, я убрал игру 
-                "Одни из нас: обновленная версия". В этом случае я прошёл эту игру на платину на PS4, а затем приобрел "Одни из нас: Часть I", где заново выбивал платину.
-                Спасибо, что всё посмотрели!
+        <div id="item-3" class="angry-grid-item" onmouseover="startSlideshow(0)">
+            <img src="pictures/fourth/1.png" class="header-image" onmouseover="this.src='pictures/fourth/2.png'" onmouseout="this.src='pictures/fourth/1.png'">
+            <lord-icon
+                src="https://cdn.lordicon.com/eiekfffz.json"
+                trigger="click"
+                stroke="light"
+                style="width:75px;height:75px;position: absolute;bottom: 30%; right: 12%;">
+            </lord-icon>
+            <h2>
+                МАСКА ДЛЯ ГЛУБОКОГО ПИТАНИЯ ДЛЯ УВЛАЖНЕНИЯ ВОЛОС
+            </h2>
+            <h2>
+                MATRIX food for soft
             </h2>
         </div>
+
         
       </div>
       <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -343,25 +229,6 @@
                 scrollTopBtn.classList.remove('show');
             }
         };
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        // Получаем все элементы с классом "angry-grid-item"
-        var gridItems = document.querySelectorAll(".angry-grid-item");
-    
-        // Получаем элемент, в который мы будем вставлять количество
-        var item21Element = document.getElementById("item-21");
-    
-        // Обновляем текст внутри элемента "item-21"
-        updateItem21Text();
-    
-        // Функция для обновления текста в "item-21"
-        function updateItem21Text() {
-            var itemCount = gridItems.length; // Получаем количество элементов
-            item21Element.innerHTML = '<h2 id="next-start-text">Количество моих платин: <h2><div id="div_kolvo_pl">' + itemCount + '</div>';
-        }
-        });
     </script>
 </div>
 </body>
