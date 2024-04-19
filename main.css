@@ -415,7 +415,6 @@
   
   h2 {
       font-size: 75px;
-      max-width: 700px;
       text-align: justify;
       margin-left: 12%;
   }
@@ -443,7 +442,8 @@
 .nav-link {
    color: #fff;
    text-decoration: none;
-   font-weight: 500;
+   font-weight: 500px;
+   font-size: 100px;
    transition: color 0.3s ease-in-out;
 }
 
@@ -455,14 +455,13 @@
    width:200px;
    height: 200px;
    position: absolute;
-   right: -2%;
-   margin-top: 45%;
+   right: -38%;
+   margin-top: -20%;
 
 }
 
 .slider {
    overflow: hidden;
-   width: 120%;
    height: 500px; 
  }
  
@@ -475,7 +474,6 @@
  }
  
  .slide img {
-   width: 120%;
    max-height: 500px;
    object-fit: cover;
  }
@@ -492,15 +490,14 @@
   }
   
   #next-start-text{
-      text-align: justify;
       margin-left: 75px;
-      font-size: 55px;
+      font-size: 60px;
   }
 
   #next-start-text_2{
-   text-align: center;
-   margin-left: 75px;
-   font-size: 55px;
+      text-align: left;
+      margin-left: 75px;
+      font-size: 60px;
 }
   
   .main-text-head{
@@ -527,13 +524,13 @@
     }
   
   .header-image {
-      max-width: 900px; 
+      max-width: 1300px; 
       height: auto;
       margin-bottom: 10px; 
   }
   
   #div_kolvo_pl{
-   font-size: 250px;
+      font-size: 250px;
   }
 
   .angry-grid {
@@ -543,7 +540,7 @@
       align-items: stretch;
       gap: 0px;
       height: 100%;
-      margin-left: 12%;
+      margin-left: 28%;
   }
   
   .angry-grid-item {
@@ -818,11 +815,18 @@
 
   .boldtext{
    font-weight: bold;
-   font-size: 25px;
+   font-size: 90px;
   }
   .finaltext{
-   font-size: 35px;
+   font-size: 90px;
   }
+
+  .aboutgrid{
+   gap: 0px;
+   margin-left: 30%;
+   min-width: 100%;
+  }
+  
 }
 
  
