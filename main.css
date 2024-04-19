@@ -1,11 +1,11 @@
 @media (min-width: 1000px){
    body {
-      background-color: black;
+      background-color: rgb(255, 255, 255);
       text-align: center;
     }
 
     .navbar {
-      background-color: rgba(128, 128, 128, 0.8); /* Полупрозрачный черный цвет фона */
+      background-color: rgba(56, 50, 50, 0.8); /* Полупрозрачный черный цвет фона */
       backdrop-filter: blur(100px); /* Размытие для эффекта стекломорфизма */
       box-shadow: 0px 4px 6px rgba(108, 92, 92, 0.1);
   }
@@ -40,7 +40,7 @@
   }
   
   h1, h2, h3, h4 {
-      color: white;
+      color: rgb(0, 0, 0);
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       margin-top: 30px;
   }
@@ -329,8 +329,8 @@
       bottom: 20px;
       right: 20px;
       background-color: #007bff;
-      color: #fff; /* Цвет текста кнопки */
-      border: 2px solid #fff; /* Белая обводка */
+      color: #000000; /* Цвет текста кнопки */
+      border: 2px solid #000000; /* Черная обводка */
       border-radius: 5px;
       background-color: transparent; /* Прозрачный фон */
       padding: 10px 15px;
@@ -346,8 +346,8 @@
   }
   
   #scrollTopBtn:hover {
-      background-color: #fff; /* Белый фон при наведении */
-      color: #000; /* Черный текст при наведении */
+      background-color: #000000; /* Белый фон при наведении */
+      color: #ffffff; /* Черный текст при наведении */
   }
    
  }
@@ -355,12 +355,12 @@
 
  @media (max-width: 1000px){
    body {
-      background-color: black;
+      background-color: rgb(255, 255, 255);
       text-align: center;
     }
   
   h1, h2, h3, h4 {
-      color: white;
+      color: rgb(0, 0, 0);
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       margin-top: 30px;
   }
@@ -705,8 +705,8 @@
       bottom: 20px;
       right: 35px;
       background-color: #007bff;
-      color: #fff; /* Цвет текста кнопки */
-      border: 2px solid #fff; /* Белая обводка */
+      color: #000000; /* Цвет текста кнопки */
+      border: 2px solid #000000; /* Белая обводка */
       border-radius: 5px;
       background-color: transparent; /* Прозрачный фон */
       padding: 10px 15px;
@@ -722,8 +722,8 @@
   }
   
   #scrollTopBtn:hover {
-      background-color: #fff; /* Белый фон при наведении */
-      color: #000; /* Черный текст при наведении */
+      background-color: #000000; /* Белый фон при наведении */
+      color: #ffffff; /* Черный текст при наведении */
   }
 
   .bi{
